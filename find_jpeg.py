@@ -14,7 +14,7 @@ for file in os.listdir(directory):
     file_path = os.path.join(directory, file)
     if os.path.isfile(file_path):
         if picture(file_path):
-            print(f'{file} is JPEG')
+            print(f'{file} is picture')
         else:
             os.remove(file_path)
-            print(f'{file} deleted')
+            print(f'{file} not picture aka deleted')
